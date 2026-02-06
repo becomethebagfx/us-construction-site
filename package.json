@@ -1,0 +1,8 @@
+{
+  "name": "us-construction-site",
+  "version": "1.0.0",
+  "description": "US Construction - Parent Company Website",
+  "scripts": {
+    "start": "echo 'Static site'"
+  }
+}

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: us-construction
+    runtime: static
+    buildCommand: echo "Static site - no build needed"
+    staticPublishPath: ./public
+    envVars:
+      - key: SKIP_INSTALL_DEPS
+        value: "true"

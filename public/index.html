@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Construction | Vertically Integrated Construction | Kentucky</title>
+  <meta name="description" content="US Construction delivers vertically integrated commercial construction services across Kentucky and the Southeast. One call from framing through finish. 5 specialized companies, 40+ years of family experience.">
+  <link rel="canonical" href="https://us-construction.onrender.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="US Construction | Vertically Integrated Construction">
+  <meta property="og:description" content="One call from framing through finish. 5 specialized companies delivering vertically integrated commercial construction across the Southeast.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://us-construction.onrender.com/">
+  <meta property="og:site_name" content="US Construction">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="US Construction | Vertically Integrated Construction">
+  <meta name="twitter:description" content="One call from framing through finish. 5 specialized companies delivering vertically integrated commercial construction.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'navy': { DEFAULT: '#1B2A4A', dark: '#0F1A2E', light: '#2A3F6B' },
+            'gold': { DEFAULT: '#B8860B', dark: '#996F09', light: '#D4A843' },
+            'warm-gray': { DEFAULT: '#8B8589', dark: '#6B6569', light: '#A8A3A7' },
+          },
+          fontFamily: {
+            'heading': ['Playfair Display', 'Georgia', 'serif'],
+            'body': ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.js"></script>
+
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-heading { font-family: 'Playfair Display', Georgia, serif; }
+
+    /* Scroll reveal */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* Stagger children */
+    .stagger > * { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; }
+    .stagger.visible > *:nth-child(1) { transition-delay: 0ms; opacity: 1; transform: translateY(0); }
+    .stagger.visible > *:nth-child(2) { transition-delay: 100ms; opacity: 1; transform: translateY(0); }
+    .stagger.visible > *:nth-child(3) { transition-delay: 200ms; opacity: 1; transform: translateY(0); }
+    .stagger.visible > *:nth-child(4) { transition-delay: 300ms; opacity: 1; transform: translateY(0); }
+    .stagger.visible > *:nth-child(5) { transition-delay: 400ms; opacity: 1; transform: translateY(0); }
+    .stagger.visible > *:nth-child(6) { transition-delay: 500ms; opacity: 1; transform: translateY(0); }
+
+    /* Hero overlay */
+    .hero-overlay { background: linear-gradient(135deg, rgba(15,26,46,0.85) 0%, rgba(27,42,74,0.7) 100%); }
+
+    /* Card hover */
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(27,42,74,0.12); }
+
+    /* Nav scroll */
+    .nav-scrolled { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+
+    /* Counter animation */
+    .counter { display: inline-block; }
+
+    /* Focus styles */
+    a:focus-visible, button:focus-visible { outline: 2px solid #B8860B; outline-offset: 2px; border-radius: 4px; }
+
+    /* Skip link */
+    .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); z-index: 100; }
+    .skip-link:focus { top: 8px; }
+  </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "US Construction",
+    "description": "US Construction is a vertically integrated family of commercial construction companies delivering framing-through-finish services across Kentucky and the Southeast United States.",
+    "url": "https://us-construction.onrender.com",
+    "telephone": "+1-502-555-0100",
+    "email": "info@usconstruction.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "4700 Shelbyville Rd, Suite 100",
+      "addressLocality": "Louisville",
+      "addressRegion": "KY",
+      "postalCode": "40207",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      { "@type": "State", "name": "Kentucky" },
+      { "@type": "State", "name": "Tennessee" },
+      { "@type": "State", "name": "Indiana" },
+      { "@type": "State", "name": "Ohio" },
+      { "@type": "State", "name": "Georgia" },
+      { "@type": "State", "name": "North Carolina" },
+      { "@type": "State", "name": "South Carolina" }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/us-construction"
+    ],
+    "subOrganization": [
+      {
+        "@type": "Organization",
+        "name": "US Framing",
+        "url": "https://us-framing.onrender.com",
+        "description": "Commercial wood and metal framing services"
+      },
+      {
+        "@type": "Organization",
+        "name": "US Drywall",
+        "url": "https://us-drywall.onrender.com",
+        "description": "Commercial drywall installation, metal stud framing, and acoustical ceiling services"
+      },
+      {
+        "@type": "Organization",
+        "name": "US Interiors",
+        "url": "https://us-interiors.onrender.com",
+        "description": "Interior finishing, trim, millwork, and detail work for commercial spaces"
+      },
+      {
+        "@type": "Organization",
+        "name": "US Exteriors",
+        "url": "https://us-exteriors.onrender.com",
+        "description": "Siding, roofing, EIFS, waterproofing, and exterior envelope systems"
+      },
+      {
+        "@type": "Organization",
+        "name": "US Development",
+        "url": "https://us-development.onrender.com",
+        "description": "Turnkey construction management and real estate development"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+  <!-- Skip Link -->
+  <a href="#main" class="skip-link bg-gold text-navy-dark font-semibold px-4 py-2 rounded-b-lg">Skip to main content</a>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3 group" aria-label="US Construction Home">
+          <span class="font-heading text-3xl font-bold text-navy">US</span>
+          <span class="w-0.5 h-8 bg-gold rounded-full"></span>
+          <div class="flex flex-col">
+            <span class="font-body text-xl font-light text-navy tracking-widest">CONSTRUCTION</span>
+            <span class="font-body text-[9px] font-medium text-warm-gray tracking-[0.2em] -mt-0.5">VERTICALLY INTEGRATED CONSTRUCTION</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="/" class="text-sm font-medium text-gold border-b-2 border-gold pb-0.5">Home</a>
+          <a href="/services/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Services</a>
+          <a href="/projects/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Projects</a>
+          <a href="/about/" class="text-sm font-medium text-navy hover:text-gold transition-colors">About</a>
+          <a href="/blog/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Insights</a>
+          <a href="/contact/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Contact</a>
+          <a href="/contact/" class="inline-flex items-center px-6 py-2.5 bg-gold hover:bg-gold-dark text-navy-dark font-semibold text-sm rounded transition-all duration-200 shadow-md hover:shadow-lg">
+            Request a Bid
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 text-navy" aria-label="Open navigation menu" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hidden fixed inset-0 bg-navy/95 z-50 lg:hidden">
+      <div class="flex flex-col items-center justify-center h-full gap-8">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 text-white p-2" aria-label="Close navigation menu">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <a href="/" class="text-2xl font-heading text-gold">Home</a>
+        <a href="/services/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Services</a>
+        <a href="/projects/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Projects</a>
+        <a href="/about/" class="text-2xl font-heading text-white hover:text-gold transition-colors">About</a>
+        <a href="/blog/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Insights</a>
+        <a href="/contact/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Contact</a>
+        <a href="/contact/" class="mt-4 px-8 py-3 bg-gold text-navy-dark font-semibold text-lg rounded">Request a Bid</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <!-- Background Image -->
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80" alt="Large commercial construction project with steel framing and active work crews" class="w-full h-full object-cover" loading="eager">
+        <div class="hero-overlay absolute inset-0"></div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-32">
+        <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+          One Call.<br>
+          <span class="text-gold">Framing Through Finish.</span>
+        </h1>
+        <p class="font-body text-lg sm:text-xl text-white/80 max-w-3xl mx-auto mb-10 leading-relaxed">
+          US Construction is a vertically integrated family of five specialized companies delivering commercial construction services from foundation to finish. One point of contact, one accountability, one standard of excellence.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="/contact/" class="inline-flex items-center px-8 py-4 bg-gold hover:bg-gold-dark text-navy-dark font-semibold text-lg rounded transition-all duration-200 shadow-lg hover:shadow-xl">
+            Request a Bid
+            <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+          </a>
+          <a href="/services/" class="inline-flex items-center px-8 py-4 border-2 border-white/30 hover:border-white text-white font-semibold text-lg rounded transition-all duration-200">
+            Our Companies
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <i data-lucide="chevron-down" class="w-6 h-6 text-white/50"></i>
+      </div>
+    </section>
+
+    <!-- ==================== STATS BAR ==================== -->
+    <section class="bg-navy-dark py-10 lg:py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-0 lg:divide-x lg:divide-white/10">
+          <div class="text-center lg:px-8">
+            <div class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-gold mb-1">
+              <span class="counter" data-target="40">0</span>+
+            </div>
+            <p class="font-body text-xs sm:text-sm text-white/60 uppercase tracking-[0.15em] font-medium">Years Experience</p>
+          </div>
+          <div class="text-center lg:px-8">
+            <div class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-gold mb-1">
+              <span class="counter" data-target="5">0</span>
+            </div>
+            <p class="font-body text-xs sm:text-sm text-white/60 uppercase tracking-[0.15em] font-medium">Specialized Companies</p>
+          </div>
+          <div class="text-center lg:px-8">
+            <div class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-gold mb-1">
+              <span class="counter" data-target="1000">0</span>+
+            </div>
+            <p class="font-body text-xs sm:text-sm text-white/60 uppercase tracking-[0.15em] font-medium">Projects Completed</p>
+          </div>
+          <div class="text-center lg:px-8">
+            <div class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-gold mb-1">
+              $<span class="counter" data-target="500">0</span>M+
+            </div>
+            <p class="font-body text-xs sm:text-sm text-white/60 uppercase tracking-[0.15em] font-medium">Installed Value</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5-PILLAR SERVICE GRID ==================== -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <p class="text-gold font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Companies</p>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4">Five Companies. One Standard.</h2>
+          <p class="font-body text-lg text-gray-500 max-w-3xl mx-auto">Each US Construction company is a specialist in its trade. Together, they form a vertically integrated powerhouse that eliminates coordination gaps and delivers projects faster, safer, and at lower cost.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger">
+          <!-- US Framing -->
+          <a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="group block bg-white border border-gray-100 rounded-lg p-8 card-hover">
+            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-gold/10 text-gold mb-5 group-hover:bg-gold group-hover:text-white transition-colors">
+              <i data-lucide="home" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading text-xl font-semibold text-navy mb-3">US Framing</h3>
+            <p class="font-body text-sm text-gray-500 leading-relaxed mb-4">Commercial wood and metal framing for multifamily, student housing, assisted living, and mixed-use projects. The foundation our family was built on — 40+ years of structural excellence.</p>
+            <span class="text-gold font-semibold text-sm group-hover:underline">Visit US Framing &rarr;</span>
+          </a>
+
+          <!-- US Drywall -->
+          <a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="group block bg-white border border-gray-100 rounded-lg p-8 card-hover">
+            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-gold/10 text-gold mb-5 group-hover:bg-gold group-hover:text-white transition-colors">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading text-xl font-semibold text-navy mb-3">US Drywall</h3>
+            <p class="font-body text-sm text-gray-500 leading-relaxed mb-4">Full-scope commercial drywall installation, metal stud framing, acoustical ceilings, fire-rated assemblies, and specialty finishes. Precision craftsmanship at scale.</p>
+            <span class="text-gold font-semibold text-sm group-hover:underline">Visit US Drywall &rarr;</span>
+          </a>
+
+          <!-- US Interiors -->
+          <a href="https://us-interiors.onrender.com" target="_blank" rel="noopener" class="group block bg-white border border-gray-100 rounded-lg p-8 card-hover">
+            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-gold/10 text-gold mb-5 group-hover:bg-gold group-hover:text-white transition-colors">
+              <i data-lucide="paintbrush" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading text-xl font-semibold text-navy mb-3">US Interiors</h3>
+            <p class="font-body text-sm text-gray-500 leading-relaxed mb-4">Interior finishing, trim, millwork, doors, hardware, and detail work for premium commercial spaces. The finishing touches that define quality.</p>
+            <span class="text-gold font-semibold text-sm group-hover:underline">Visit US Interiors &rarr;</span>
+          </a>
+
+          <!-- US Exteriors -->
+          <a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="group block bg-white border border-gray-100 rounded-lg p-8 card-hover">
+            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-gold/10 text-gold mb-5 group-hover:bg-gold group-hover:text-white transition-colors">
+              <i data-lucide="building" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading text-xl font-semibold text-navy mb-3">US Exteriors</h3>
+            <p class="font-body text-sm text-gray-500 leading-relaxed mb-4">Siding, roofing, EIFS, waterproofing, and complete exterior envelope systems. Protecting the building from the outside in.</p>
+            <span class="text-gold font-semibold text-sm group-hover:underline">Visit US Exteriors &rarr;</span>
+          </a>
+
+          <!-- US Development -->
+          <a href="https://us-development.onrender.com" target="_blank" rel="noopener" class="group block bg-white border border-gray-100 rounded-lg p-8 card-hover">
+            <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-gold/10 text-gold mb-5 group-hover:bg-gold group-hover:text-white transition-colors">
+              <i data-lucide="landmark" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-heading text-xl font-semibold text-navy mb-3">US Development</h3>
+            <p class="font-body text-sm text-gray-500 leading-relaxed mb-4">Turnkey construction management and real estate development. We coordinate our integrated family of services to deliver projects from concept to completion.</p>
+            <span class="text-gold font-semibold text-sm group-hover:underline">Visit US Development &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHY VERTICAL INTEGRATION ==================== -->
+    <section class="py-20 lg:py-28 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="reveal">
+            <p class="text-gold font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">The US Advantage</p>
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-6">Why Vertical Integration Wins</h2>
+            <p class="font-body text-lg text-gray-500 mb-8 leading-relaxed">
+              When your framing crew, drywall team, interior finishers, and exterior specialists all operate under one umbrella, every handoff becomes seamless. No finger-pointing. No scheduling gaps. No communication breakdowns.
+            </p>
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-gold/10 text-gold flex-shrink-0 mt-0.5">
+                  <i data-lucide="dollar-sign" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-body font-semibold text-navy mb-1">Lower Total Cost</h3>
+                  <p class="text-sm text-gray-500">Eliminate markup stacking between independent subs. Our integrated pricing delivers 10-15% savings on framing-through-finish scopes.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-gold/10 text-gold flex-shrink-0 mt-0.5">
+                  <i data-lucide="shield-check" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-body font-semibold text-navy mb-1">Single Accountability</h3>
+                  <p class="text-sm text-gray-500">One point of contact for framing, drywall, interiors, and exteriors. When something needs attention, there is no blame-shifting between trades.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-gold/10 text-gold flex-shrink-0 mt-0.5">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-body font-semibold text-navy mb-1">Faster Schedules</h3>
+                  <p class="text-sm text-gray-500">Our crews know each other. Pre-built workflows between our companies compress transition time and keep your project on track.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-gold/10 text-gold flex-shrink-0 mt-0.5">
+                  <i data-lucide="check-circle" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="font-body font-semibold text-navy mb-1">Consistent Quality</h3>
+                  <p class="text-sm text-gray-500">Same family standards across every trade. Our framers build knowing exactly what our drywall team needs, and our finishers deliver knowing the standard has been set.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reveal">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Construction team reviewing blueprints on an active commercial job site" class="rounded-xl shadow-lg w-full" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAMILY ECOSYSTEM ==================== -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <p class="text-gold font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">The Ecosystem</p>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4">Built to Work Together</h2>
+          <p class="font-body text-lg text-gray-500 max-w-3xl mx-auto">Every US Construction company is designed to integrate seamlessly with its siblings. Here is how a typical project flows through our family.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-4 stagger">
+          <!-- Step 1 -->
+          <div class="text-center p-6 rounded-xl border border-gray-100 bg-white relative">
+            <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-gold text-white flex items-center justify-center font-bold text-sm">1</div>
+            <div class="w-14 h-14 mx-auto mb-3 rounded-full bg-navy flex items-center justify-center">
+              <span class="font-heading text-lg font-bold text-gold">USF</span>
+            </div>
+            <h3 class="font-heading text-base font-semibold text-navy mb-1">US Framing</h3>
+            <p class="text-xs text-gray-500">Structure goes up. Wood and metal framing sets the skeleton.</p>
+            <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10">
+              <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="text-center p-6 rounded-xl border border-gray-100 bg-white relative">
+            <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-gold text-white flex items-center justify-center font-bold text-sm">2</div>
+            <div class="w-14 h-14 mx-auto mb-3 rounded-full bg-navy flex items-center justify-center">
+              <span class="font-heading text-lg font-bold text-gold">USE</span>
+            </div>
+            <h3 class="font-heading text-base font-semibold text-navy mb-1">US Exteriors</h3>
+            <p class="text-xs text-gray-500">Building envelope sealed. Siding, roofing, waterproofing installed.</p>
+            <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10">
+              <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="text-center p-6 rounded-xl border border-gray-100 bg-white relative">
+            <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-gold text-white flex items-center justify-center font-bold text-sm">3</div>
+            <div class="w-14 h-14 mx-auto mb-3 rounded-full bg-navy flex items-center justify-center">
+              <span class="font-heading text-lg font-bold text-gold">USD</span>
+            </div>
+            <h3 class="font-heading text-base font-semibold text-navy mb-1">US Drywall</h3>
+            <p class="text-xs text-gray-500">Walls and ceilings finished. Drywall, acoustical, fire-rated assemblies.</p>
+            <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10">
+              <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="text-center p-6 rounded-xl border border-gray-100 bg-white relative">
+            <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-gold text-white flex items-center justify-center font-bold text-sm">4</div>
+            <div class="w-14 h-14 mx-auto mb-3 rounded-full bg-navy flex items-center justify-center">
+              <span class="font-heading text-lg font-bold text-gold">USI</span>
+            </div>
+            <h3 class="font-heading text-base font-semibold text-navy mb-1">US Interiors</h3>
+            <p class="text-xs text-gray-500">Finishing touches applied. Trim, millwork, doors, hardware.</p>
+            <div class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 z-10">
+              <i data-lucide="chevron-right" class="w-5 h-5 text-gold"></i>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="text-center p-6 rounded-xl border-2 border-gold bg-gold/5">
+            <div class="w-8 h-8 mx-auto mb-3 rounded-full bg-gold text-white flex items-center justify-center font-bold text-sm">5</div>
+            <div class="w-14 h-14 mx-auto mb-3 rounded-full bg-gold flex items-center justify-center">
+              <span class="font-heading text-lg font-bold text-navy-dark">USDv</span>
+            </div>
+            <h3 class="font-heading text-base font-semibold text-navy mb-1">US Development</h3>
+            <p class="text-xs text-gray-500">Turnkey delivery. Coordinating all companies from concept to keys.</p>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center reveal">
+          <p class="text-sm text-gray-400 italic max-w-2xl mx-auto">US Development coordinates across all companies, but general contractors can also engage any individual company directly for specialized scopes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS ==================== -->
+    <section class="py-20 lg:py-28 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <p class="text-gold font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Integrated Delivery</p>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4">Projects That Prove It</h2>
+          <p class="font-body text-lg text-gray-500 max-w-2xl mx-auto">See how our vertically integrated approach delivers results across multifamily, commercial, and mixed-use projects.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 stagger">
+          <!-- Project 1 -->
+          <div class="group relative overflow-hidden rounded-xl bg-white shadow-md card-hover">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800&q=80" alt="River Crossing Apartments - 312-unit multifamily complex" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            </div>
+            <div class="absolute top-4 right-4 flex gap-2">
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USF</span>
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USD</span>
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USI</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-semibold text-navy mb-2">River Crossing Apartments</h3>
+              <p class="text-sm text-gray-500 mb-3">312-unit luxury multifamily complex. US Framing, US Drywall, and US Interiors delivered framing through finish under one coordination umbrella.</p>
+              <div class="flex items-center gap-6 text-sm">
+                <span class="flex items-center gap-1.5 text-gray-400"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Louisville, KY</span>
+                <span class="flex items-center gap-1.5 text-gold font-semibold"><i data-lucide="ruler" class="w-3.5 h-3.5"></i> 285,000 SF</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="group relative overflow-hidden rounded-xl bg-white shadow-md card-hover">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?w=800&q=80" alt="Summit Student Living - 450-bed student housing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            </div>
+            <div class="absolute top-4 right-4 flex gap-2">
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USF</span>
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USD</span>
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USE</span>
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USI</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-semibold text-navy mb-2">Summit Student Living</h3>
+              <p class="text-sm text-gray-500 mb-3">450-bed student housing across two buildings. All four trade companies coordinated by US Development for turnkey delivery 3 weeks ahead of schedule.</p>
+              <div class="flex items-center gap-6 text-sm">
+                <span class="flex items-center gap-1.5 text-gray-400"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Lexington, KY</span>
+                <span class="flex items-center gap-1.5 text-gold font-semibold"><i data-lucide="ruler" class="w-3.5 h-3.5"></i> 198,000 SF</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="group relative overflow-hidden rounded-xl bg-white shadow-md card-hover">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80" alt="Harmony Senior Living - 120-bed assisted living facility" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            </div>
+            <div class="absolute top-4 right-4 flex gap-2">
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USF</span>
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USD</span>
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USI</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-semibold text-navy mb-2">Harmony Senior Living</h3>
+              <p class="text-sm text-gray-500 mb-3">120-bed assisted living facility with specialized sound-rated assemblies, premium Level 5 finishes, and ADA-compliant interior finishing throughout.</p>
+              <div class="flex items-center gap-6 text-sm">
+                <span class="flex items-center gap-1.5 text-gray-400"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Nashville, TN</span>
+                <span class="flex items-center gap-1.5 text-gold font-semibold"><i data-lucide="ruler" class="w-3.5 h-3.5"></i> 145,000 SF</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="group relative overflow-hidden rounded-xl bg-white shadow-md card-hover">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="Bluegrass Corporate Center - Class A mixed-use tower" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+            </div>
+            <div class="absolute top-4 right-4 flex gap-2">
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USD</span>
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USE</span>
+              <span class="px-2 py-0.5 bg-navy text-white text-[10px] font-bold rounded-full uppercase tracking-wider">USI</span>
+              <span class="px-2 py-0.5 bg-gold text-navy-dark text-[10px] font-bold rounded-full uppercase tracking-wider">USDv</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-heading text-xl font-semibold text-navy mb-2">Bluegrass Corporate Center</h3>
+              <p class="text-sm text-gray-500 mb-3">Class A mixed-use tower with 8 floors of premium finishes. US Development managed the full scope, coordinating drywall, exteriors, and interior finishing.</p>
+              <div class="flex items-center gap-6 text-sm">
+                <span class="flex items-center gap-1.5 text-gray-400"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Louisville, KY</span>
+                <span class="flex items-center gap-1.5 text-gold font-semibold"><i data-lucide="ruler" class="w-3.5 h-3.5"></i> 320,000 SF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12 reveal">
+          <a href="/projects/" class="inline-flex items-center px-8 py-3 border-2 border-navy text-navy hover:bg-navy hover:text-white font-semibold rounded transition-all duration-200">
+            View All Projects
+            <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="py-20 lg:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 reveal">
+          <p class="text-gold font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Trusted Partners</p>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-navy mb-4">What GCs Say About Us</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger">
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <div class="text-gold text-5xl font-heading mb-4 opacity-30">&ldquo;</div>
+            <p class="font-body text-gray-600 italic leading-relaxed mb-6">Having one family handle framing, drywall, and interiors on our 312-unit project eliminated the coordination headaches we normally deal with. The handoffs between their crews were seamless — they literally know each other by name.</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-gold font-bold text-sm">MR</div>
+              <div>
+                <p class="font-semibold text-navy text-sm">Mike Reynolds</p>
+                <p class="text-xs text-gray-400">Project Manager, Messer Construction</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <div class="text-gold text-5xl font-heading mb-4 opacity-30">&ldquo;</div>
+            <p class="font-body text-gray-600 italic leading-relaxed mb-6">We saved 12% on our student housing project by bundling framing through finish with the US family. But honestly, the schedule acceleration was worth even more. They finished 3 weeks ahead because there were zero transition delays.</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-gold font-bold text-sm">SH</div>
+              <div>
+                <p class="font-semibold text-navy text-sm">Sarah Henderson</p>
+                <p class="text-xs text-gray-400">VP of Construction, Doster Construction</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <div class="text-gold text-5xl font-heading mb-4 opacity-30">&ldquo;</div>
+            <p class="font-body text-gray-600 italic leading-relaxed mb-6">I have been in this industry 30 years and I have never seen a subcontractor family this well-coordinated. When something goes wrong on site, there is one phone call to make. That kind of accountability is rare and extremely valuable.</p>
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-gold font-bold text-sm">JT</div>
+              <div>
+                <p class="font-semibold text-navy text-sm">James Turner</p>
+                <p class="text-xs text-gray-400">Senior Estimator, Brasfield & Gorrie</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="relative py-24 overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=80" alt="Commercial construction project in progress" class="w-full h-full object-cover" loading="lazy">
+        <div class="absolute inset-0 bg-navy/90"></div>
+      </div>
+      <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Ready for One Call, Framing Through Finish?</h2>
+        <p class="font-body text-lg text-white/70 mb-10 max-w-2xl mx-auto">Whether you need a single trade or the full vertically integrated package, we are ready to deliver. Tell us about your project and we will show you the US Construction difference.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="/contact/" class="inline-flex items-center px-8 py-4 bg-gold hover:bg-gold-dark text-navy-dark font-semibold text-lg rounded transition-all duration-200 shadow-lg hover:shadow-xl">
+            Request a Bid Today
+            <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i>
+          </a>
+          <a href="tel:+15025550100" class="inline-flex items-center px-8 py-4 border-2 border-white/30 hover:border-white text-white font-semibold text-lg rounded transition-all duration-200">
+            <i data-lucide="phone" class="w-5 h-5 mr-2"></i>
+            (502) 555-0100
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-navy-dark pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <!-- Column 1: Brand -->
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <span class="font-heading text-2xl font-bold text-white">US</span>
+            <span class="w-0.5 h-6 bg-gold rounded-full"></span>
+            <span class="font-body text-lg font-light text-white tracking-widest">CONSTRUCTION</span>
+          </div>
+          <p class="text-sm text-white/50 mb-6 leading-relaxed">Vertically integrated commercial construction services across Kentucky and the Southeast. Five specialized companies, one standard of excellence.</p>
+          <div class="flex items-center gap-4">
+            <a href="https://www.linkedin.com/company/us-construction" target="_blank" rel="noopener" aria-label="LinkedIn" class="text-white/40 hover:text-gold transition-colors">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Our Companies -->
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Our Companies</h4>
+          <ul class="space-y-2.5">
+            <li><a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold transition-colors">US Framing</a></li>
+            <li><a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold transition-colors">US Drywall</a></li>
+            <li><a href="https://us-interiors.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold transition-colors">US Interiors</a></li>
+            <li><a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold transition-colors">US Exteriors</a></li>
+            <li><a href="https://us-development.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold transition-colors">US Development</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Company -->
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Company</h4>
+          <ul class="space-y-2.5">
+            <li><a href="/about/" class="text-sm text-white/50 hover:text-gold transition-colors">About Us</a></li>
+            <li><a href="/projects/" class="text-sm text-white/50 hover:text-gold transition-colors">Projects</a></li>
+            <li><a href="/services/" class="text-sm text-white/50 hover:text-gold transition-colors">Services</a></li>
+            <li><a href="/blog/" class="text-sm text-white/50 hover:text-gold transition-colors">Insights</a></li>
+            <li><a href="/contact/" class="text-sm text-white/50 hover:text-gold transition-colors">Contact</a></li>
+            <li><a href="https://us-marketing-dashboard.onrender.com" target="_blank" class="text-sm text-white/50 hover:text-gold transition-colors">Mission Control</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div>
+          <h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gold mt-0.5 flex-shrink-0"></i>
+              <span class="text-sm text-white/50">4700 Shelbyville Rd, Suite 100<br>Louisville, KY 40207</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="phone" class="w-4 h-4 text-gold flex-shrink-0"></i>
+              <a href="tel:+15025550100" class="text-sm text-white/50 hover:text-gold transition-colors">(502) 555-0100</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="mail" class="w-4 h-4 text-gold flex-shrink-0"></i>
+              <a href="mailto:info@usconstruction.com" class="text-sm text-white/50 hover:text-gold transition-colors">info@usconstruction.com</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i data-lucide="clock" class="w-4 h-4 text-gold flex-shrink-0"></i>
+              <span class="text-sm text-white/50">Mon-Fri: 7:00 AM - 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Service Areas -->
+      <div class="border-t border-white/10 pt-8 mb-8">
+        <p class="text-xs text-white/30 text-center">Serving Kentucky, Tennessee, Indiana, Ohio, Georgia, North Carolina, and South Carolina</p>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-white/30">&copy; 2026 US Construction. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="/privacy-policy/" class="text-xs text-white/30 hover:text-white/50 transition-colors">Privacy Policy</a>
+          <a href="/terms/" class="text-xs text-white/30 hover:text-white/50 transition-colors">Terms of Service</a>
+          <a href="/sitemap.xml" class="text-xs text-white/30 hover:text-white/50 transition-colors">Sitemap</a>
+          <a href="https://us-marketing-dashboard.onrender.com" class="text-xs text-white/30 hover:text-white/50 transition-colors" target="_blank">Admin</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuClose = document.getElementById('mobile-menu-close');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      menuBtn.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    });
+
+    menuClose.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('nav-scrolled');
+      } else {
+        navbar.classList.remove('nav-scrolled');
+      }
+    });
+
+    // Scroll reveal
+    const revealElements = document.querySelectorAll('.reveal, .stagger');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // Counter animation
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = parseInt(counter.getAttribute('data-target'));
+          const duration = 2000;
+          const startTime = performance.now();
+
+          function updateCounter(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            counter.textContent = Math.floor(eased * target);
+            if (progress < 1) {
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = target;
+            }
+          }
+          requestAnimationFrame(updateCounter);
+          counterObserver.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(c => counterObserver.observe(c));
+
+    // Respect reduced motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal, .stagger, .stagger > *').forEach(el => {
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+        el.style.transition = 'none';
+      });
+    }
+  </script>
+</body>
+</html>
