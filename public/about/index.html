@@ -13,7 +13,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      theme: { extend: { colors: { 'navy': { DEFAULT: '#1B2A4A', dark: '#0F1A2E', light: '#2A3F6B' }, 'gold': { DEFAULT: '#B8860B', dark: '#996F09', light: '#D4A843' }, 'warm-gray': { DEFAULT: '#8B8589', dark: '#6B6569', light: '#A8A3A7' } }, fontFamily: { 'heading': ['Playfair Display', 'Georgia', 'serif'], 'body': ['Inter', 'system-ui', 'sans-serif'] } } }
+      theme: { extend: { colors: { 'navy': { DEFAULT: '#1B2A4A', dark: '#0F1A2E', light: '#2A3F6B' }, 'steel': { DEFAULT: '#6B7B8D', dark: '#566575', light: '#8A97A5' }, 'warm-gray': { DEFAULT: '#8B8589', dark: '#6B6569', light: '#A8A3A7' } }, fontFamily: { 'heading': ['Playfair Display', 'Georgia', 'serif'], 'body': ['Inter', 'system-ui', 'sans-serif'] } } }
     }
   </script>
   <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.js"></script>
@@ -31,33 +31,28 @@
     .hero-overlay { background: linear-gradient(135deg, rgba(15,26,46,0.85) 0%, rgba(27,42,74,0.7) 100%); }
     .nav-scrolled { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
     html { scroll-behavior: smooth; }
-    a:focus-visible, button:focus-visible { outline: 2px solid #B8860B; outline-offset: 2px; border-radius: 4px; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #6B7B8D; outline-offset: 2px; border-radius: 4px; }
     .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); z-index: 100; }
     .skip-link:focus { top: 8px; }
   </style>
 </head>
 <body class="bg-white text-gray-800 antialiased">
-  <a href="#main" class="skip-link bg-gold text-navy-dark font-semibold px-4 py-2 rounded-b-lg">Skip to main content</a>
+  <a href="#main" class="skip-link bg-steel text-navy-dark font-semibold px-4 py-2 rounded-b-lg">Skip to main content</a>
 
   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="/" class="flex items-center gap-3" aria-label="US Construction Home">
-          <span class="font-heading text-3xl font-bold text-navy">US</span>
-          <span class="w-0.5 h-8 bg-gold rounded-full"></span>
-          <div class="flex flex-col">
-            <span class="font-body text-xl font-light text-navy tracking-widest">CONSTRUCTION</span>
-            <span class="font-body text-[9px] font-medium text-warm-gray tracking-[0.2em] -mt-0.5">VERTICALLY INTEGRATED CONSTRUCTION</span>
-          </div>
+        <a href="/" class="flex items-center group" aria-label="US Construction Home">
+          <img src="/images/logo.svg" alt="US Construction" class="h-12 w-auto">
         </a>
         <div class="hidden lg:flex items-center gap-8">
-          <a href="/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Home</a>
-          <a href="/services/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Services</a>
-          <a href="/projects/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Projects</a>
-          <a href="/about/" class="text-sm font-medium text-gold border-b-2 border-gold pb-0.5">About</a>
-          <a href="/blog/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Insights</a>
-          <a href="/contact/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Contact</a>
-          <a href="/contact/" class="inline-flex items-center px-6 py-2.5 bg-gold hover:bg-gold-dark text-navy-dark font-semibold text-sm rounded transition-all duration-200 shadow-md hover:shadow-lg">Request a Bid</a>
+          <a href="/" class="text-sm font-medium text-navy hover:text-steel transition-colors">Home</a>
+          <a href="/services/" class="text-sm font-medium text-navy hover:text-steel transition-colors">Services</a>
+          <a href="/projects/" class="text-sm font-medium text-navy hover:text-steel transition-colors">Projects</a>
+          <a href="/about/" class="text-sm font-medium text-steel border-b-2 border-steel pb-0.5">About</a>
+          <a href="/blog/" class="text-sm font-medium text-navy hover:text-steel transition-colors">Insights</a>
+          <a href="/contact/" class="text-sm font-medium text-navy hover:text-steel transition-colors">Contact</a>
+          <a href="/contact/" class="inline-flex items-center px-6 py-2.5 bg-steel hover:bg-steel-dark text-navy-dark font-semibold text-sm rounded transition-all duration-200 shadow-md hover:shadow-lg">Request a Bid</a>
         </div>
         <button id="mobile-menu-btn" class="lg:hidden p-2 text-navy" aria-label="Open navigation menu" aria-expanded="false">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -67,13 +62,13 @@
     <div id="mobile-menu" class="hidden fixed inset-0 bg-navy/95 z-50 lg:hidden">
       <div class="flex flex-col items-center justify-center h-full gap-8">
         <button id="mobile-menu-close" class="absolute top-6 right-6 text-white p-2" aria-label="Close navigation menu"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button>
-        <a href="/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Home</a>
-        <a href="/services/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Services</a>
-        <a href="/projects/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Projects</a>
-        <a href="/about/" class="text-2xl font-heading text-gold">About</a>
-        <a href="/blog/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Insights</a>
-        <a href="/contact/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Contact</a>
-        <a href="/contact/" class="mt-4 px-8 py-3 bg-gold text-navy-dark font-semibold text-lg rounded">Request a Bid</a>
+        <a href="/" class="text-2xl font-heading text-white hover:text-steel transition-colors">Home</a>
+        <a href="/services/" class="text-2xl font-heading text-white hover:text-steel transition-colors">Services</a>
+        <a href="/projects/" class="text-2xl font-heading text-white hover:text-steel transition-colors">Projects</a>
+        <a href="/about/" class="text-2xl font-heading text-steel">About</a>
+        <a href="/blog/" class="text-2xl font-heading text-white hover:text-steel transition-colors">Insights</a>
+        <a href="/contact/" class="text-2xl font-heading text-white hover:text-steel transition-colors">Contact</a>
+        <a href="/contact/" class="mt-4 px-8 py-3 bg-steel text-navy-dark font-semibold text-lg rounded">Request a Bid</a>
       </div>
     </div>
   </nav>
@@ -94,7 +89,7 @@
     <section class="py-20 lg:py-28 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal">
-          <p class="text-gold font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Vertically Integrated Since Day One</p>
+          <p class="text-steel font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Vertically Integrated Since Day One</p>
           <h2 class="font-heading text-3xl sm:text-4xl font-bold text-navy mb-8">Built by Family. Scaled by Excellence.</h2>
           <div class="prose prose-lg max-w-none text-gray-600 space-y-6">
             <p>US Construction began in the early 1990s as a single framing crew in Louisville, Kentucky. The founder saw an opportunity that most contractors missed: the handoffs between trades were where projects fell apart. Miscommunication between framers and drywall crews. Scheduling gaps between interior and exterior teams. Finger-pointing when quality suffered.</p>
@@ -110,15 +105,15 @@
     <section class="py-20 lg:py-28 bg-gray-50">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 reveal">
-          <p class="text-gold font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Journey</p>
+          <p class="text-steel font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Our Journey</p>
           <h2 class="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">Three Decades of Growth</h2>
         </div>
 
         <div class="space-y-8 stagger">
           <div class="flex gap-6">
             <div class="flex flex-col items-center">
-              <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center text-white font-bold text-xs flex-shrink-0">1990s</div>
-              <div class="w-0.5 h-full bg-gold/20 mt-2"></div>
+              <div class="w-12 h-12 rounded-full bg-steel flex items-center justify-center text-white font-bold text-xs flex-shrink-0">1990s</div>
+              <div class="w-0.5 h-full bg-steel/20 mt-2"></div>
             </div>
             <div class="pb-8">
               <h3 class="font-heading text-xl font-semibold text-navy mb-2">The Foundation</h3>
@@ -128,8 +123,8 @@
 
           <div class="flex gap-6">
             <div class="flex flex-col items-center">
-              <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center text-white font-bold text-xs flex-shrink-0">2000s</div>
-              <div class="w-0.5 h-full bg-gold/20 mt-2"></div>
+              <div class="w-12 h-12 rounded-full bg-steel flex items-center justify-center text-white font-bold text-xs flex-shrink-0">2000s</div>
+              <div class="w-0.5 h-full bg-steel/20 mt-2"></div>
             </div>
             <div class="pb-8">
               <h3 class="font-heading text-xl font-semibold text-navy mb-2">Expanding the Family</h3>
@@ -139,8 +134,8 @@
 
           <div class="flex gap-6">
             <div class="flex flex-col items-center">
-              <div class="w-12 h-12 rounded-full bg-gold flex items-center justify-center text-white font-bold text-xs flex-shrink-0">2010s</div>
-              <div class="w-0.5 h-full bg-gold/20 mt-2"></div>
+              <div class="w-12 h-12 rounded-full bg-steel flex items-center justify-center text-white font-bold text-xs flex-shrink-0">2010s</div>
+              <div class="w-0.5 h-full bg-steel/20 mt-2"></div>
             </div>
             <div class="pb-8">
               <h3 class="font-heading text-xl font-semibold text-navy mb-2">Full Vertical Integration</h3>
@@ -150,7 +145,7 @@
 
           <div class="flex gap-6">
             <div class="flex flex-col items-center">
-              <div class="w-12 h-12 rounded-full bg-navy flex items-center justify-center text-gold font-bold text-xs flex-shrink-0">2020s</div>
+              <div class="w-12 h-12 rounded-full bg-navy flex items-center justify-center text-steel font-bold text-xs flex-shrink-0">2020s</div>
             </div>
             <div>
               <h3 class="font-heading text-xl font-semibold text-navy mb-2">Turnkey Delivery</h3>
@@ -165,35 +160,35 @@
     <section class="py-20 lg:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 reveal">
-          <p class="text-gold font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Leadership</p>
+          <p class="text-steel font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">Leadership</p>
           <h2 class="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">The Team Behind the Vision</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger">
           <div class="text-center">
             <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-navy flex items-center justify-center">
-              <span class="font-heading text-3xl font-bold text-gold">JW</span>
+              <span class="font-heading text-3xl font-bold text-steel">JW</span>
             </div>
             <h3 class="font-heading text-xl font-semibold text-navy mb-1">James Wettstain</h3>
-            <p class="text-gold text-sm font-medium mb-3">Founder & CEO</p>
+            <p class="text-steel text-sm font-medium mb-3">Founder & CEO</p>
             <p class="text-sm text-gray-500 max-w-xs mx-auto">Founded US Framing in the 1990s and built the vertically integrated vision from the ground up. 40+ years in commercial construction.</p>
           </div>
 
           <div class="text-center">
             <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-navy flex items-center justify-center">
-              <span class="font-heading text-3xl font-bold text-gold">BW</span>
+              <span class="font-heading text-3xl font-bold text-steel">BW</span>
             </div>
             <h3 class="font-heading text-xl font-semibold text-navy mb-1">Brandon Wettstain</h3>
-            <p class="text-gold text-sm font-medium mb-3">President & COO</p>
+            <p class="text-steel text-sm font-medium mb-3">President & COO</p>
             <p class="text-sm text-gray-500 max-w-xs mx-auto">Second-generation leader overseeing day-to-day operations across all five companies. Drives the family's growth strategy and market expansion.</p>
           </div>
 
           <div class="text-center">
             <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-navy flex items-center justify-center">
-              <span class="font-heading text-3xl font-bold text-gold">SW</span>
+              <span class="font-heading text-3xl font-bold text-steel">SW</span>
             </div>
             <h3 class="font-heading text-xl font-semibold text-navy mb-1">Sarah Wettstain</h3>
-            <p class="text-gold text-sm font-medium mb-3">VP of Business Development</p>
+            <p class="text-steel text-sm font-medium mb-3">VP of Business Development</p>
             <p class="text-sm text-gray-500 max-w-xs mx-auto">Leads client relationships and new market development. Focused on expanding the family's footprint across the Southeast.</p>
           </div>
         </div>
@@ -204,27 +199,27 @@
     <section class="py-20 lg:py-28 bg-gray-50">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16 reveal">
-          <p class="text-gold font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">What We Stand For</p>
+          <p class="text-steel font-body text-sm font-semibold tracking-[0.2em] uppercase mb-3">What We Stand For</p>
           <h2 class="font-heading text-3xl sm:text-4xl font-bold text-navy mb-4">Our Values</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 stagger">
           <div class="text-center p-6">
-            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center"><i data-lucide="users" class="w-7 h-7 text-gold"></i></div>
+            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-steel/10 flex items-center justify-center"><i data-lucide="users" class="w-7 h-7 text-steel"></i></div>
             <h3 class="font-heading text-lg font-semibold text-navy mb-2">Family First</h3>
             <p class="text-sm text-gray-500">We treat our employees, partners, and clients like family. Relationships built on trust outlast any single project.</p>
           </div>
           <div class="text-center p-6">
-            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center"><i data-lucide="shield" class="w-7 h-7 text-gold"></i></div>
+            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-steel/10 flex items-center justify-center"><i data-lucide="shield" class="w-7 h-7 text-steel"></i></div>
             <h3 class="font-heading text-lg font-semibold text-navy mb-2">Safety Always</h3>
             <p class="text-sm text-gray-500">Zero-incident culture across all five companies. Every worker goes home safe, every day. No exceptions.</p>
           </div>
           <div class="text-center p-6">
-            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center"><i data-lucide="target" class="w-7 h-7 text-gold"></i></div>
+            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-steel/10 flex items-center justify-center"><i data-lucide="target" class="w-7 h-7 text-steel"></i></div>
             <h3 class="font-heading text-lg font-semibold text-navy mb-2">Precision Craft</h3>
             <p class="text-sm text-gray-500">Good enough is never good enough. We deliver precision craftsmanship that stands up to scrutiny and stands the test of time.</p>
           </div>
           <div class="text-center p-6">
-            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-gold/10 flex items-center justify-center"><i data-lucide="handshake" class="w-7 h-7 text-gold"></i></div>
+            <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-steel/10 flex items-center justify-center"><i data-lucide="handshake" class="w-7 h-7 text-steel"></i></div>
             <h3 class="font-heading text-lg font-semibold text-navy mb-2">Accountability</h3>
             <p class="text-sm text-gray-500">One family, one standard. When something needs attention, we own it and fix it. No finger-pointing between trades.</p>
           </div>
@@ -238,7 +233,7 @@
       <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Join Our Story</h2>
         <p class="font-body text-lg text-white/70 mb-10 max-w-2xl mx-auto">Whether you are a GC looking for a trusted trade partner or a developer seeking turnkey delivery, we would love to show you the US Construction difference.</p>
-        <a href="/contact/" class="inline-flex items-center px-8 py-4 bg-gold hover:bg-gold-dark text-navy-dark font-semibold text-lg rounded transition-all duration-200 shadow-lg hover:shadow-xl">Get In Touch <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i></a>
+        <a href="/contact/" class="inline-flex items-center px-8 py-4 bg-steel hover:bg-steel-dark text-navy-dark font-semibold text-lg rounded transition-all duration-200 shadow-lg hover:shadow-xl">Get In Touch <i data-lucide="arrow-right" class="w-5 h-5 ml-2"></i></a>
       </div>
     </section>
   </main>
@@ -247,12 +242,12 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
         <div>
-          <div class="flex items-center gap-2 mb-4"><span class="font-heading text-2xl font-bold text-white">US</span><span class="w-0.5 h-6 bg-gold rounded-full"></span><span class="font-body text-lg font-light text-white tracking-widest">CONSTRUCTION</span></div>
+          <div class="flex items-center gap-2 mb-4"><span class="font-heading text-2xl font-bold text-white">US</span><span class="w-0.5 h-6 bg-steel rounded-full"></span><span class="font-body text-lg font-light text-white tracking-widest">CONSTRUCTION</span></div>
           <p class="text-sm text-white/50 mb-6 leading-relaxed">Vertically integrated commercial construction services across Kentucky and the Southeast.</p>
         </div>
-        <div><h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Our Companies</h4><ul class="space-y-2.5"><li><a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold transition-colors">US Framing</a></li><li><a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold transition-colors">US Drywall</a></li><li><a href="https://us-interiors.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold transition-colors">US Interiors</a></li><li><a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold transition-colors">US Exteriors</a></li><li><a href="https://us-development.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-gold transition-colors">US Development</a></li></ul></div>
-        <div><h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Company</h4><ul class="space-y-2.5"><li><a href="/about/" class="text-sm text-white/50 hover:text-gold transition-colors">About Us</a></li><li><a href="/projects/" class="text-sm text-white/50 hover:text-gold transition-colors">Projects</a></li><li><a href="/services/" class="text-sm text-white/50 hover:text-gold transition-colors">Services</a></li><li><a href="/blog/" class="text-sm text-white/50 hover:text-gold transition-colors">Insights</a></li><li><a href="/contact/" class="text-sm text-white/50 hover:text-gold transition-colors">Contact</a></li><li><a href="https://us-marketing-dashboard.onrender.com" target="_blank" class="text-sm text-white/50 hover:text-gold transition-colors">Mission Control</a></li></ul></div>
-        <div><h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4><ul class="space-y-3"><li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-gold mt-0.5 flex-shrink-0"></i><span class="text-sm text-white/50">4700 Shelbyville Rd, Suite 100<br>Louisville, KY 40207</span></li><li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-gold flex-shrink-0"></i><a href="tel:+15025550100" class="text-sm text-white/50 hover:text-gold transition-colors">(502) 555-0100</a></li><li class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-gold flex-shrink-0"></i><a href="mailto:info@usconstruction.com" class="text-sm text-white/50 hover:text-gold transition-colors">info@usconstruction.com</a></li></ul></div>
+        <div><h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Our Companies</h4><ul class="space-y-2.5"><li><a href="https://us-framing.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-steel transition-colors">US Framing</a></li><li><a href="https://us-drywall.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-steel transition-colors">US Drywall</a></li><li><a href="https://us-interiors.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-steel transition-colors">US Interiors</a></li><li><a href="https://us-exteriors.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-steel transition-colors">US Exteriors</a></li><li><a href="https://us-development.onrender.com" target="_blank" rel="noopener" class="text-sm text-white/50 hover:text-steel transition-colors">US Development</a></li></ul></div>
+        <div><h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Company</h4><ul class="space-y-2.5"><li><a href="/about/" class="text-sm text-white/50 hover:text-steel transition-colors">About Us</a></li><li><a href="/projects/" class="text-sm text-white/50 hover:text-steel transition-colors">Projects</a></li><li><a href="/services/" class="text-sm text-white/50 hover:text-steel transition-colors">Services</a></li><li><a href="/blog/" class="text-sm text-white/50 hover:text-steel transition-colors">Insights</a></li><li><a href="/contact/" class="text-sm text-white/50 hover:text-steel transition-colors">Contact</a></li><li><a href="https://us-marketing-dashboard.onrender.com" target="_blank" class="text-sm text-white/50 hover:text-steel transition-colors">Mission Control</a></li></ul></div>
+        <div><h4 class="font-body text-sm font-semibold text-white uppercase tracking-wider mb-4">Contact</h4><ul class="space-y-3"><li class="flex items-start gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-steel mt-0.5 flex-shrink-0"></i><span class="text-sm text-white/50">4700 Shelbyville Rd, Suite 100<br>Louisville, KY 40207</span></li><li class="flex items-center gap-3"><i data-lucide="phone" class="w-4 h-4 text-steel flex-shrink-0"></i><a href="tel:+15025550100" class="text-sm text-white/50 hover:text-steel transition-colors">(502) 555-0100</a></li><li class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-steel flex-shrink-0"></i><a href="mailto:info@usconstruction.com" class="text-sm text-white/50 hover:text-steel transition-colors">info@usconstruction.com</a></li></ul></div>
       </div>
       <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p class="text-xs text-white/30">&copy; 2026 US Construction. All rights reserved.</p>

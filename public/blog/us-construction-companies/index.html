@@ -13,7 +13,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      theme: { extend: { colors: { 'navy': { DEFAULT: '#1B2A4A', dark: '#0F1A2E', light: '#2A3F6B' }, 'gold': { DEFAULT: '#B8860B', dark: '#996F09', light: '#D4A843' }, 'warm-gray': { DEFAULT: '#8B8589', dark: '#6B6569', light: '#A8A3A7' } }, fontFamily: { 'heading': ['Playfair Display', 'Georgia', 'serif'], 'body': ['Inter', 'system-ui', 'sans-serif'] } } }
+      theme: { extend: { colors: { 'navy': { DEFAULT: '#1B2A4A', dark: '#0F1A2E', light: '#2A3F6B' }, 'steel': { DEFAULT: '#6B7B8D', dark: '#566575', light: '#8A97A5' }, 'warm-gray': { DEFAULT: '#8B8589', dark: '#6B6569', light: '#A8A3A7' } }, fontFamily: { 'heading': ['Playfair Display', 'Georgia', 'serif'], 'body': ['Inter', 'system-ui', 'sans-serif'] } } }
     }
   </script>
   <script src="https://unpkg.com/lucide@0.344.0/dist/umd/lucide.js"></script>
@@ -23,7 +23,7 @@
     .hero-overlay { background: linear-gradient(135deg, rgba(15,26,46,0.85) 0%, rgba(27,42,74,0.7) 100%); }
     .nav-scrolled { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
     html { scroll-behavior: smooth; }
-    a:focus-visible, button:focus-visible { outline: 2px solid #B8860B; outline-offset: 2px; border-radius: 4px; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #6B7B8D; outline-offset: 2px; border-radius: 4px; }
     .skip-link { position: absolute; top: -100%; left: 50%; transform: translateX(-50%); z-index: 100; }
     .skip-link:focus { top: 8px; }
   </style>
@@ -41,18 +41,17 @@
   </script>
 </head>
 <body class="bg-white text-gray-800 antialiased">
-  <a href="#main" class="skip-link bg-gold text-navy-dark font-semibold px-4 py-2 rounded-b-lg">Skip to main content</a>
+  <a href="#main" class="skip-link bg-steel text-navy-dark font-semibold px-4 py-2 rounded-b-lg">Skip to main content</a>
 
   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
-        <a href="/" class="flex items-center gap-3" aria-label="US Construction Home">
-          <span class="font-heading text-3xl font-bold text-navy">US</span><span class="w-0.5 h-8 bg-gold rounded-full"></span>
-          <div class="flex flex-col"><span class="font-body text-xl font-light text-navy tracking-widest">CONSTRUCTION</span><span class="font-body text-[9px] font-medium text-warm-gray tracking-[0.2em] -mt-0.5">VERTICALLY INTEGRATED CONSTRUCTION</span></div>
+        <a href="/" class="flex items-center group" aria-label="US Construction Home">
+          <img src="/images/logo.svg" alt="US Construction" class="h-12 w-auto">
         </a>
         <div class="hidden lg:flex items-center gap-8">
-          <a href="/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Home</a><a href="/services/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Services</a><a href="/projects/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Projects</a><a href="/about/" class="text-sm font-medium text-navy hover:text-gold transition-colors">About</a><a href="/blog/" class="text-sm font-medium text-gold border-b-2 border-gold pb-0.5">Insights</a><a href="/contact/" class="text-sm font-medium text-navy hover:text-gold transition-colors">Contact</a>
-          <a href="/contact/" class="inline-flex items-center px-6 py-2.5 bg-gold hover:bg-gold-dark text-navy-dark font-semibold text-sm rounded transition-all duration-200 shadow-md hover:shadow-lg">Request a Bid</a>
+          <a href="/" class="text-sm font-medium text-navy hover:text-steel transition-colors">Home</a><a href="/services/" class="text-sm font-medium text-navy hover:text-steel transition-colors">Services</a><a href="/projects/" class="text-sm font-medium text-navy hover:text-steel transition-colors">Projects</a><a href="/about/" class="text-sm font-medium text-navy hover:text-steel transition-colors">About</a><a href="/blog/" class="text-sm font-medium text-steel border-b-2 border-steel pb-0.5">Insights</a><a href="/contact/" class="text-sm font-medium text-navy hover:text-steel transition-colors">Contact</a>
+          <a href="/contact/" class="inline-flex items-center px-6 py-2.5 bg-steel hover:bg-steel-dark text-navy-dark font-semibold text-sm rounded transition-all duration-200 shadow-md hover:shadow-lg">Request a Bid</a>
         </div>
         <button id="mobile-menu-btn" class="lg:hidden p-2 text-navy" aria-label="Open navigation menu" aria-expanded="false"><svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
       </div>
@@ -60,8 +59,8 @@
     <div id="mobile-menu" class="hidden fixed inset-0 bg-navy/95 z-50 lg:hidden">
       <div class="flex flex-col items-center justify-center h-full gap-8">
         <button id="mobile-menu-close" class="absolute top-6 right-6 text-white p-2" aria-label="Close navigation menu"><svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg></button>
-        <a href="/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Home</a><a href="/services/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Services</a><a href="/projects/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Projects</a><a href="/about/" class="text-2xl font-heading text-white hover:text-gold transition-colors">About</a><a href="/blog/" class="text-2xl font-heading text-gold">Insights</a><a href="/contact/" class="text-2xl font-heading text-white hover:text-gold transition-colors">Contact</a>
-        <a href="/contact/" class="mt-4 px-8 py-3 bg-gold text-navy-dark font-semibold text-lg rounded">Request a Bid</a>
+        <a href="/" class="text-2xl font-heading text-white hover:text-steel transition-colors">Home</a><a href="/services/" class="text-2xl font-heading text-white hover:text-steel transition-colors">Services</a><a href="/projects/" class="text-2xl font-heading text-white hover:text-steel transition-colors">Projects</a><a href="/about/" class="text-2xl font-heading text-white hover:text-steel transition-colors">About</a><a href="/blog/" class="text-2xl font-heading text-steel">Insights</a><a href="/contact/" class="text-2xl font-heading text-white hover:text-steel transition-colors">Contact</a>
+        <a href="/contact/" class="mt-4 px-8 py-3 bg-steel text-navy-dark font-semibold text-lg rounded">Request a Bid</a>
       </div>
     </div>
   </nav>
@@ -70,7 +69,7 @@
     <section class="relative py-32 lg:py-40 overflow-hidden">
       <div class="absolute inset-0"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80" alt="US Construction family of companies" class="w-full h-full object-cover" loading="eager"><div class="hero-overlay absolute inset-0"></div></div>
       <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div class="flex items-center justify-center gap-2 mb-4"><span class="px-3 py-1 bg-gold/20 text-gold text-xs font-bold rounded-full uppercase tracking-wider">Company</span><span class="text-white/60 text-sm">February 5, 2026</span></div>
+        <div class="flex items-center justify-center gap-2 mb-4"><span class="px-3 py-1 bg-steel/20 text-steel text-xs font-bold rounded-full uppercase tracking-wider">Company</span><span class="text-white/60 text-sm">February 5, 2026</span></div>
         <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Meet the US Construction Family of Companies</h1>
         <p class="font-body text-lg text-white/80 max-w-2xl mx-auto">Five specialized companies, one integrated standard. Here is how each contributes to our vertically integrated construction model.</p>
       </div>
@@ -78,7 +77,7 @@
 
     <article class="py-16 lg:py-24">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gold/5 border-l-4 border-gold p-6 rounded-r-lg mb-12">
+        <div class="bg-steel/5 border-l-4 border-steel p-6 rounded-r-lg mb-12">
           <p class="font-body text-sm font-semibold text-navy mb-2">Quick Answer</p>
           <p class="font-body text-gray-700 leading-relaxed">The US Construction family consists of five specialized companies: US Framing (commercial wood and metal framing), US Drywall (drywall installation, acoustical ceilings, and fire-rated assemblies), US Interiors (trim, millwork, doors, and interior finishing), US Exteriors (siding, roofing, EIFS, and waterproofing), and US Development (turnkey construction management and real estate development). Together they deliver framing-through-finish services under one umbrella.</p>
         </div>
@@ -88,44 +87,44 @@
           <p class="text-gray-600 leading-relaxed mb-6">US Construction is not one company trying to do everything. It is five specialist companies that each excel at their trade — and together form a vertically integrated construction powerhouse. Here is a closer look at each member of the family.</p>
 
           <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">US Framing: Where It All Began</h2>
-          <p class="text-gray-600 leading-relaxed mb-4">Founded in the early 1990s, <a href="https://us-framing.onrender.com" class="text-gold hover:underline" target="_blank" rel="noopener">US Framing</a> is the original member of the family. Specializing in commercial wood and metal framing, US Framing handles multifamily housing, student housing, assisted living facilities, and mixed-use developments ranging from 10,000 to 500,000+ square feet.</p>
+          <p class="text-gray-600 leading-relaxed mb-4">Founded in the early 1990s, <a href="https://us-framing.onrender.com" class="text-steel hover:underline" target="_blank" rel="noopener">US Framing</a> is the original member of the family. Specializing in commercial wood and metal framing, US Framing handles multifamily housing, student housing, assisted living facilities, and mixed-use developments ranging from 10,000 to 500,000+ square feet.</p>
           <p class="text-gray-600 leading-relaxed mb-6"><strong>Key capabilities:</strong> Wood framing, metal stud framing, panelized wall systems, structural sheathing, and trusses.</p>
 
           <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">US Drywall: Walls and Ceilings</h2>
-          <p class="text-gray-600 leading-relaxed mb-4"><a href="https://us-drywall.onrender.com" class="text-gold hover:underline" target="_blank" rel="noopener">US Drywall</a> was the natural second addition to the family, capturing the critical framing-to-drywall handoff. Our drywall crews work hand-in-hand with the framing team, moving onto a floor the day after framing is complete — something that rarely happens with independent subcontractors.</p>
+          <p class="text-gray-600 leading-relaxed mb-4"><a href="https://us-drywall.onrender.com" class="text-steel hover:underline" target="_blank" rel="noopener">US Drywall</a> was the natural second addition to the family, capturing the critical framing-to-drywall handoff. Our drywall crews work hand-in-hand with the framing team, moving onto a floor the day after framing is complete — something that rarely happens with independent subcontractors.</p>
           <p class="text-gray-600 leading-relaxed mb-6"><strong>Key capabilities:</strong> Drywall installation (Level 1-5 finishes), metal stud framing, acoustical ceiling tile and grid, fire-rated assemblies (1-4 hour UL-listed), specialty textures, and skim coating.</p>
 
           <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">US Interiors: The Finishing Touch</h2>
-          <p class="text-gray-600 leading-relaxed mb-4"><a href="https://us-interiors.onrender.com" class="text-gold hover:underline" target="_blank" rel="noopener">US Interiors</a> handles the detail work that turns a construction project into a finished space. Our crews are craftsmen focused on precision, because the finishing touches are what clients see and what tenants experience every day.</p>
+          <p class="text-gray-600 leading-relaxed mb-4"><a href="https://us-interiors.onrender.com" class="text-steel hover:underline" target="_blank" rel="noopener">US Interiors</a> handles the detail work that turns a construction project into a finished space. Our crews are craftsmen focused on precision, because the finishing touches are what clients see and what tenants experience every day.</p>
           <p class="text-gray-600 leading-relaxed mb-6"><strong>Key capabilities:</strong> Trim and base installation, crown molding, door and hardware packages, custom millwork, cabinetry, and specialty interior installations.</p>
 
           <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">US Exteriors: The Building Envelope</h2>
-          <p class="text-gray-600 leading-relaxed mb-4"><a href="https://us-exteriors.onrender.com" class="text-gold hover:underline" target="_blank" rel="noopener">US Exteriors</a> protects the building from the outside in. Our exterior crews coordinate with US Framing to ensure the structural substrate is prepared correctly for the envelope system, and with US Drywall to ensure interior work is not compromised by moisture intrusion.</p>
+          <p class="text-gray-600 leading-relaxed mb-4"><a href="https://us-exteriors.onrender.com" class="text-steel hover:underline" target="_blank" rel="noopener">US Exteriors</a> protects the building from the outside in. Our exterior crews coordinate with US Framing to ensure the structural substrate is prepared correctly for the envelope system, and with US Drywall to ensure interior work is not compromised by moisture intrusion.</p>
           <p class="text-gray-600 leading-relaxed mb-6"><strong>Key capabilities:</strong> Commercial siding (fiber cement, vinyl, engineered wood), roofing systems, EIFS and stucco, waterproofing and flashing, weather barriers, and window/door installation.</p>
 
           <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">US Development: The Coordinator</h2>
-          <p class="text-gray-600 leading-relaxed mb-4"><a href="https://us-development.onrender.com" class="text-gold hover:underline" target="_blank" rel="noopener">US Development</a> is the newest member of the family, formed to offer turnkey construction management and real estate development services. US Development coordinates all five companies on large-scale projects, providing developers and GCs with a single contract and single point of accountability for the entire integrated scope.</p>
+          <p class="text-gray-600 leading-relaxed mb-4"><a href="https://us-development.onrender.com" class="text-steel hover:underline" target="_blank" rel="noopener">US Development</a> is the newest member of the family, formed to offer turnkey construction management and real estate development services. US Development coordinates all five companies on large-scale projects, providing developers and GCs with a single contract and single point of accountability for the entire integrated scope.</p>
           <p class="text-gray-600 leading-relaxed mb-6"><strong>Key capabilities:</strong> Turnkey construction management, multi-trade coordination, design-build, value engineering, and real estate development.</p>
 
           <h2 class="font-heading text-2xl font-bold text-navy mt-12 mb-4">How to Engage the Family</h2>
-          <p class="text-gray-600 leading-relaxed mb-6">General contractors can engage any US Construction company individually for specialized scopes, or bundle multiple companies for integrated delivery. The more trades you bundle, the greater the cost savings and schedule benefits. Contact us at <a href="/contact/" class="text-gold hover:underline">(502) 555-0100</a> or visit any company's website directly to learn more about their specific capabilities.</p>
+          <p class="text-gray-600 leading-relaxed mb-6">General contractors can engage any US Construction company individually for specialized scopes, or bundle multiple companies for integrated delivery. The more trades you bundle, the greater the cost savings and schedule benefits. Contact us at <a href="/contact/" class="text-steel hover:underline">(502) 555-0100</a> or visit any company's website directly to learn more about their specific capabilities.</p>
         </div>
 
         <div class="mt-16 bg-navy rounded-xl p-8 text-center">
           <h3 class="font-heading text-2xl font-bold text-white mb-4">Ready to Work With the Family?</h3>
           <p class="text-white/70 mb-6">Tell us about your project and we will match you with the right combination of companies.</p>
-          <a href="/contact/" class="inline-flex items-center px-8 py-3 bg-gold hover:bg-gold-dark text-navy-dark font-semibold rounded transition-all duration-200 shadow-md">Request a Bid <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
+          <a href="/contact/" class="inline-flex items-center px-8 py-3 bg-steel hover:bg-steel-dark text-navy-dark font-semibold rounded transition-all duration-200 shadow-md">Request a Bid <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i></a>
         </div>
 
         <div class="mt-16">
           <h3 class="font-heading text-xl font-bold text-navy mb-6">Related Articles</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <a href="/blog/vertical-integration-construction/" class="group block border border-gray-100 rounded-lg p-4 hover:border-gold/30 transition-colors">
-              <h4 class="font-semibold text-navy text-sm group-hover:text-gold transition-colors mb-1">What Is Vertical Integration in Construction?</h4>
+            <a href="/blog/vertical-integration-construction/" class="group block border border-gray-100 rounded-lg p-4 hover:border-steel/30 transition-colors">
+              <h4 class="font-semibold text-navy text-sm group-hover:text-steel transition-colors mb-1">What Is Vertical Integration in Construction?</h4>
               <p class="text-xs text-gray-400">The strategy behind integrated delivery</p>
             </a>
-            <a href="/blog/one-call-framing-through-finish/" class="group block border border-gray-100 rounded-lg p-4 hover:border-gold/30 transition-colors">
-              <h4 class="font-semibold text-navy text-sm group-hover:text-gold transition-colors mb-1">One Call, Framing Through Finish: How It Works</h4>
+            <a href="/blog/one-call-framing-through-finish/" class="group block border border-gray-100 rounded-lg p-4 hover:border-steel/30 transition-colors">
+              <h4 class="font-semibold text-navy text-sm group-hover:text-steel transition-colors mb-1">One Call, Framing Through Finish: How It Works</h4>
               <p class="text-xs text-gray-400">Behind the scenes of integrated project delivery</p>
             </a>
           </div>
