@@ -86,7 +86,10 @@
           <div class="reveal">
             <h2 class="font-heading text-3xl font-bold text-navy mb-6">Request a Bid</h2>
             <p class="text-gray-500 mb-8">Tell us about your project and we will connect you with the right team. Whether you need one trade or all five, we have you covered.</p>
-            <form class="space-y-6" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); this.classList.add('hidden');">
+            <form id="contact-form" class="space-y-6" novalidate>
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_subject" value="New Bid Request — US Construction Website">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label for="name" class="block text-sm font-medium text-navy mb-1">Full Name *</label>
@@ -231,6 +234,55 @@
     const ro=new IntersectionObserver(e=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('visible');ro.unobserve(en.target);}});},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
     document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
     if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('.reveal').forEach(el=>{el.style.opacity='1';el.style.transform='none';el.style.transition='none';});}
+
+    const form = document.getElementById('contact-form');
+    const formSuccess = document.getElementById('form-success');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if (!name || !email || !message) {
+        form.querySelectorAll('[required]').forEach(field => {
+          if (!field.value.trim()) {
+            field.style.borderColor = '#DC2626';
+          } else {
+            field.style.borderColor = '#E5E7EB';
+          }
+        });
+        return;
+      }
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalHTML = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Sending...';
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+      fetch('https://formsubmit.co/ajax/brandonhayman.b@gmail.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(r => r.json()).then(result => {
+        if (result.success) {
+          form.classList.add('hidden');
+          formSuccess.classList.remove('hidden');
+          lucide.createIcons();
+        } else {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalHTML;
+          lucide.createIcons();
+          alert('Something went wrong. Please try again or call us at (502) 555-0100.');
+        }
+      }).catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalHTML;
+        lucide.createIcons();
+        alert('Something went wrong. Please try again or call us at (502) 555-0100.');
+      });
+    });
+    form.querySelectorAll('input, select, textarea').forEach(field => {
+      field.addEventListener('input', () => { field.style.borderColor = '#E5E7EB'; });
+    });
   </script>
 </body>
 </html>
